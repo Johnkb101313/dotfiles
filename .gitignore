@@ -1,0 +1,6 @@
+# .vim
+.vim/.vim/autoload/plug.vim
+.vim/.vim/plugged
+
+# nvim
+nvim/.config/nvim/plugin/packer_compiled.lua

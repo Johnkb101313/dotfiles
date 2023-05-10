@@ -1,0 +1,31 @@
+# key-bindings
+   map gv cd ~/.vim
+   map gnv cd ~/.config/nvim
+   map gc cd ~/.config
+   map grct $$EDITOR ~/.tmux.conf
+   map grcv $$EDITOR ~/.vimrc
+   map grcnv $$EDITOR ~/.config/nvim/init.lua
+   map grcb $$EDITOR ~/.bashrc
+   map grcl $$EDITOR ~/.config/lf/lfrc
+   map grca $$EDITOR /mnt/c/Users/Johnk/AppData/Roaming/alacritty/alacritty.yml
+   map .d :mkdir
+   map .f :mkfile
+
+# options
+   set hidden
+   set icons
+   set relativenumber
+   set drawbox
+
+# Custom-commands
+   cmd mkdir ${{
+      clear
+      read -p "Directory name: " dir_name
+      mkdir "${dir_name}"
+   }}
+
+   cmd mkfile ${{
+      clear
+      read -p "File name: " file_name
+      touch "${file_name}"
+   }}
