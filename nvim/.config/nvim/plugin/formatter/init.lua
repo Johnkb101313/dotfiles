@@ -11,7 +11,16 @@ require("formatter").setup({
 
         javascript = {require("formatter.filetypes.javascript").prettier},
 
-        c = {require("formatter.filetypes.c").clangformat}
+        -- c = {require("formatter.filetypes.c").clangformat}
+        c = {
+            function()
+                return {
+                    exe = "clang-format",
+                    args = {"--style=mozilla"},
+                    stdin = true
+                }
+            end
+        }
         -- I am already use my autocmd to do this
         -- ["*"] = {
         --    require("formatter.filetypes.any").remove_trailing_whitespace
