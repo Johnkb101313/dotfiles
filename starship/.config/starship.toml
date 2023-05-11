@@ -1,0 +1,7 @@
+format = '$username$directory$git_branch$git_status$character'
+add_newline = false
+
+[username]
+format = '$user '
+disabled = false
+show_always = true
