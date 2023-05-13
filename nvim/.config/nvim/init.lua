@@ -88,8 +88,8 @@ keymap('n', "<leader>d", ":set relativenumber!<cr>", {silent = true})
 keymap('n', 'yzc', ":let @z = ''<cr>:echom '@z clear!'<cr>")
 
 -- init.lua
-keymap('n', "<leader>ev", ":vnew ~/.config/nvim/init.lua")
-keymap('n', "<leader>sv", ":source ~/.config/nvim/init.lua")
+keymap('n', "<leader>ev", ":vnew ~/.config/nvim/init.lua<cr>")
+keymap('n', "<leader>sv", ":source ~/.config/nvim/init.lua<cr>")
 
 -- Autocmd group
 augroup('Appearance', {clear = true})

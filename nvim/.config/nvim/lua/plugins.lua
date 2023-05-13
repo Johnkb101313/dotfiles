@@ -7,6 +7,7 @@ packer.startup(function(use)
 
     -- Theme
     use 'rebelot/kanagawa.nvim'
+    use 'ellisonleao/gruvbox.nvim'
 
     -- Statusline
     use 'nvim-lualine/lualine.nvim'

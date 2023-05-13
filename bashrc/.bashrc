@@ -13,6 +13,9 @@ alias q='exit'
 alias c='clear'
 alias his='history'
 
+# Alias (non-shell buildin)
+alias tm='tmux'
+
 tday=`date +"%Y/%m/%d"`
 export tday
 #PS1="[ \u  \w \$ ] "
